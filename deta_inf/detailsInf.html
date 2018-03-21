@@ -1,0 +1,297 @@
+<!--
+	作者：小熊
+	时间：2017-03-14
+	描述：详情页面
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>详情页面</title>
+		<meta name="keywords" content="1024免费电子书网,kindle电子书,txt电子书籍下载网" />
+		<meta name="description" content="1024免费小说网,免费提供弄txt,mobi,kindle小说资源"/>
+		<link rel="stylesheet" href="../css/headXM.css" />
+		<link rel="stylesheet" href="../css/bottomXM.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/IE_bottomXM.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/detaills.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/IE_detaills.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/detailsXM_information.css"/>
+		<!--jq导入-->
+		<script src="../js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/headXM.js" ></script>
+		<script src="../js/detailsXM_information.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--窗口固定导航-->
+	<div class="fixed-nav-box detaills-nav" id="fixed_nav2">
+		<div class="fixed-nav">
+			<ul>
+				<li class="fixed-nav-li fixed-nav-title ">1024小书柜
+					<ul>
+						<a href="../indexXM.html"><li>首页</li></a>
+						<a href="../allBooksXM.html"><li>全部书籍</li></a>
+						<a href="../informationXM.html"><li>资讯1024</li></a>
+					</ul>
+				</li>
+				<a href="###"><li class="fixed-nav-li">小说</li></a>
+				<a href="###"><li class="fixed-nav-li">玄幻</li></a>
+				<a href="###"><li class="fixed-nav-li">励志</li></a>
+				<a href="###"><li class="fixed-nav-li">体育</li></a>
+				<!--其他-->
+				<li class="fixed-nav-li fixed-nav-button">其他&nbsp;<img src="../img/book-menu.png" width="10px"width="5px" />
+					<ul>
+						<a href=""><li class="fixed-nav-li3">科学</li></a>
+						<a href=""><li class="fixed-nav-li3">生活</li></a>
+						<a href=""><li class="fixed-nav-li3">英文</li></a>
+						<a href=""><li class="fixed-nav-li3">经典</li></a>
+
+						<a href=""><li class="fixed-nav-li3">科学</li></a>
+						<a href=""><li class="fixed-nav-li3">生活</li></a>
+						<a href=""><li class="fixed-nav-li3">英文</li></a>
+						<a href=""><li class="fixed-nav-li3">经典</li></a>
+
+						<a href=""><li class="fixed-nav-li3">科学</li></a>
+						<a href=""><li class="fixed-nav-li3">生活</li></a>
+						<a href=""><li class="fixed-nav-li3">英文</li></a>
+						<a href=""><li class="fixed-nav-li3">经典</li></a>
+
+						<a href=""><li class="fixed-nav-li3">科学</li></a>
+						<a href=""><li class="fixed-nav-li3">生活</li></a>
+						<a href=""><li class="fixed-nav-li3">英文</li></a>
+
+						<a href=""><li class="fixed-nav-li3">科学</li></a>
+						<a href=""><li class="fixed-nav-li3">生活</li></a>
+						<a href=""><li class="fixed-nav-li3">英文</li></a>
+
+					</ul>
+				</li>
+			</ul>
+			<!--搜索框 调用版权导航-->
+					<div class="copyright-nav fixed-nav-search">
+						<input class="copyright-input fixed-nav-input" name="copyright-input" type="tel" placeholder="试试搜索喜欢的书籍吧" />
+						<select class="copyright-select" name="search-select">
+							<option selected="selected" value="1">文章</option>
+							<option value="2">作者</option>
+							<option value="3">书名</option>
+							<option value="4">简介</option>
+							<option value="5">国家</option>
+
+						</select>
+						<a class="copyright-a fixed-nav-search-a" href="#">搜索</a>
+						<!--搜索内容显示方框-->
+						<div class="search-input-main2 search-input-ul">
+							<ul>
+								<li class="title">书名</li>
+								<li class="li1">《边城的的故事》--黄文仔</li>
+								<li class="li1">《海泽娜》--沙克斯</li>
+								<li class="li1">《洛泽或》--斯科拉</li>
+
+								<li class="title">作者</li>
+								<li class="li1">的奈尔--《释放的温情》</li>
+								<li class="li1">加升温</li>
+								<li class="li1">黄文涛</li>
+
+								<li class="title">推荐</li>
+								<li class="li1">《卡诺尔》--释放的文学</li>
+							</ul>
+						</div>
+					</div>
+		</div>
+	</div>
+	<!--跳到顶部  悬浮-->
+	<!--跳到顶部  悬浮-->
+	<!--跳到顶部  悬浮-->
+	<div class="upward" id="upward">
+		<ul>
+			<li><img src="../img/qq_1.png" alt="顶部" />关注QQ</li>
+			<li class="upward-li2"><img src="../img/weibo_2.png" alt="顶部" />关注微信</li>
+			<li class="upward-li3" onclick="upward()"><img src="../img/up_1.png" alt="顶部" />返回顶部</li>
+		</ul>
+	</div>
+	<!--跳到顶部  悬浮 end-->
+	<!--跳到顶部  悬浮 end-->
+		<!--头部调用end-->
+		
+		<!--内容部分-------------------------------------------------->
+		<!--内容部分-------------------------------------------------->
+		<!--内容部分-------------------------------------------------->
+		<div class="information_main_null"></div>
+		<div class="information_main">
+			<!--居中边框-->
+			<div class="information_main_box">
+				<!--标题 框-->
+				<div class="title_box">
+					<!--边框修饰线-->
+					<div class="title_box_line">
+						<!--标题-->
+						<a href="" class="a1">时光的记忆，那些无法泯灭的时光</a>
+						<!--副标题-->
+						<a href="" class="a2">-时光任然，见不得是一件好事，索贿光阴，生不应是坏事-</a>
+						<!--时间-->
+						<a href="" class="a3">1024小书柜&nbsp;&nbsp;小熊&nbsp;&nbsp;2017-2-25</a>
+					</div>
+				</div>
+				<!--内容 框-->
+				<div class="main_box">
+				
+				<a href="">
+			随着北斗卫星导航系统第22颗和第23颗发射升空，整个北斗卫星导航系统已经正式开始组网覆盖亚洲，并且将在2020年左右覆盖全球，成为第
+			三个完成全球组网的卫星导航系统，超过欧洲“伽利略”卫星导航系统，成为仅次于美国GPS和俄罗斯“格洛纳斯”卫星导航系统的军民两用全球导航系统。军事专家
+			张强告诉记者，据美国《InsideGNSS》杂志文章称，2003年，中国承诺投资2.7亿美元参加欧洲的“伽利略”全球导航卫星项目开发。但到2007年，中国突然
+			被欧洲故意冷落，并“扫地出门”，所有“伽利略”项目的重大决
+			策都被排除之外，理由是安全和知识产权等问题。当时，拉中国参与该计划被一些人视为欧洲人的一种反美姿态，中国人感到被严重利用甚至是羞辱了。<br />
+			<img src="../img/book-img/img-2.jpg"/>
+			20年前，因为需要一款足够合适的卫星导航系统用来作为中国的武器制导和民间使用。
+			中国渴望与欧洲合作“伽利略”卫星导航系统，但是在最初的合作之后，却因为种种原因被拒
+			之门外，最终导致中国下定决心研发出自己的卫星导航系统。2010年，中国的北斗导
+			航系统频段正式采用与欧洲“伽利略”卫星一样的PRS频段，由于PRS频段采取“先用先得”的规则，中国领先欧洲发射大量北
+			斗卫星，实质上已经抢占了欧洲伽利略卫星的几个重要频段，如果欧洲卫星使用同
+			样频段，意味着他国对中国的导航定位卫星实施特定频段干扰，欧洲伽利略卫星也将受到牵连。<br /><br />
+			也就是说，欧洲的导航定位卫星系统被迫使用和中国北斗系统一样的频段，
+			，这让此前瞧不起中国的欧洲人“鼻子都气歪了”。至今为止中国“北斗”卫星导航系统已经发
+			射了23颗卫星，组网覆盖亚洲地区，而欧洲“伽利略”却只发射了16颗卫星，远远落后于中国的进度。卫星导航系统除了导航，侦查以外，还有很多作用。最大的左右自然是战略预警，在敌国导弹发射以后，
+			，发射距离和目标，从而引导拦截，对本国的伤害将减轻到最少，甚至如果面对的导弹比较少的话，还可以丝毫无损，这对于任何一个大国来说都是非常需要的技术了。<br /><br />
+			此外还可以用于武器的制导，我国的导弹技术先进，无论是导弹打击范围涵盖了近则数千米，远则上万千米的范围，而在这个范围内要保证导弹的命中精度，就只能依靠卫星
+			导航系统了，曾经我国导弹采用了GPS导航系统，但美国直接强行掐断了系统，最终导致中国导弹失控坠海，失去了获得胜利的机会，这就是核心技术不掌握在自己手里的坏处。<br />
+			<img src="../img/book-img/img-3.jpg"/>
+			事实上，“伽利略”卫星导航系统即使建设完毕，也无法追上“北斗”卫星导航系统，早在2009年，中国就连续发射数颗“北斗”卫星导航系统，直接拿下了仅次于美俄的第三优的频率，将“伽
+			利略”系统排挤出了最好的几个位置，并在短短的9年里连续发射27颗导航卫星，以平均每年3颗的速度建设了地
+			球第二强的卫星导航系统。建成后的“北斗”导航系统能够全球全天候监视全球地域，为中国军队和民众提供卫星导航系统，在分辨精
+			度高达0.1米的情况下，北斗系统甚至能够看到地面上的人头，依此更可以为中国的军队带来强大的导航能力。
+			中国军队也可以像美国军队一样，来一次精确的“手术刀”式打击，将敌军轻松解决，而这对于以前的中国军队来说是不可想象的。随着“北斗”导航系统的逐渐
+			建设，中国军队在未来的发展必然趋向于智能化，精确化和信息化打击。而作为中国来说，最有可能的便是在2020年将部队的机械化和信息化，电子化同步完成了，打造出一个未来军队，而“北斗”系统正式这其中的核心。
+			
+			</a>
+			<!--标签-->
+			<div class="label_box">
+				<a href="" class="title">标签：</a>
+				<a href="" class="a1">文学</a>
+				<a href="" class="a1">历史文刊</a>
+				<a href="" class="a1">科学</a>
+				<a href="" class="a1">记录</a>
+				<a href="" class="a1">小书柜</a>
+			</div><!--标签END-->
+			</div><!--内容 框 END-->
+			
+			<!--一键分享-->
+			<div class="share_box">
+				<a class="bshareDiv" href="http://www.bshare.cn/share">分享</a>
+				<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=<您的uuid>&style=-1"></script>
+				<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/addons/bshareAp.js"></script>			</div>
+			<!--一键分享END-->
+			
+			</div><!--居中边框END-->
+			
+		</div>
+		<!--内容部分-------------------------------------------------->
+		<!--内容部分-------------------------------------------------->
+		<!--内容部分-------------------------------------------------->
+		
+		<!--底部调用-->
+		<!--尾部版权-->
+		<!--外背景-->
+		<div class="bottomXM-box-w">
+			<!--版权部分外框-->
+			<div class="copyright-box">
+				<!--版权部分内-->
+				<div class="copyright-box-n">
+					<!--左边-->
+					<div class="copyright-1 copyright-left">
+						<!--占位-->
+						<div class="copyright-null1"></div>
+						<!--搜索框-->
+						<div class="copyright-nav ">
+							<input class="copyright-input bottom-nav-input" name="copyright-input" type="tel" placeholder="试试搜索喜欢的书籍吧" />
+							<select class="copyright-select" name="search-select">
+								<option selected="selected" value="1">文章</option>
+								<option value="2">作者</option>
+								<option value="3">书名</option>
+								<option value="4">简介</option>
+								<option value="5">国家</option>
+							</select>
+							<a class="copyright-a" href="#">搜索</a>
+							<!--搜索内容显示方框-->
+							<div class="search-input-main3 search-input-ul search-input-ul3">
+								<ul>
+									<li class="title">书名</li>
+									<li class="li1">《边城的的故事》--黄文仔</li>
+									<li class="li1">《海泽娜》--沙克斯</li>
+									<li class="li1">《洛泽或》--斯科拉</li>
+
+									<li class="title">作者</li>
+									<li class="li1">的奈尔--《释放的温情》</li>
+									<li class="li1">加升温</li>
+									<li class="li1">黄文涛</li>
+
+									<li class="title">推荐</li>
+									<li class="li1">《卡诺尔》--释放的文学</li>
+								</ul>
+							</div>
+						</div>
+						<!--占位-->
+						<div class="copyright-null2"></div>
+						<!--关注1024-->
+						<div class=" copyright-follow">
+							关注我们：<a><img src="../img/wechat1.png" width="32px" height="32px" /><img class="img-2" src="../img/QR Code.png" alt="lallla" width="100px" height="100px" /></a> 1024小书柜<span class="copyright-follow-span">(点击查看二维码)</span>
+							<a><img src="../img/sina1.png" width="32px" height="32px" /><img class="img-2" src="../img/QR Code.png" alt="lallla" width="100px" height="100px" /></a> 1024小书柜<span class="copyright-follow-span">(点击查看二维码)</span>
+						</div>
+						<!--版权声明-->
+						<div class="copyright-state">
+							Copyright © 2013-2014 Cenday All rights reserved.  粤ICP备13047866号
+						</div>
+						<!--关于我们-->
+						<div class="copyright-concern">
+							<ul>
+								<a><li class="copyright-concern_li">关于我们 </li></a>
+								<a><li>免责声明 </li></a>
+								<a><li>网站地图  </li></a>
+								<a><li>资讯新闻</li></a>
+								<a><li>留言反馈</li></a>
+							</ul>
+						</div>
+					</div>
+					<!--右边-->
+					<div class="copyright-1 copyright-right">
+						<!--调用占位-->
+						<div class="copyright-null1"></div>
+						<!--联系我们-->
+						<div class="copyright-contact-box">
+							<!--378*130-->
+							<div class="copyright-contact">
+								<a>联系我们</a>
+								<a>电子邮箱：931623824@qq.com,1279724190@qq.com</a>
+								<a>在线咨询：931623824 / 1279724190</a>
+								<a>联系地址：上海浦东新区东葛路2525号</a>
+							</div>
+							<!--二维码-->
+							<div class="copyright-wechat">
+								<img src="../img/QR Code.png" width="130px" height="130px" />
+								<div class="copyright-wechat-font">
+									<a>官方微信</a>
+									<a>扫一扫</a>
+									<a>更多精彩</a>
+									<a>资讯</a>
+								</div>
+							</div>
+						</div>
+
+						<!--本站声明-->
+						<div class="copyright-site-statement"><a>本站声明：本站提供的图片仅供学习和交流使用，版权归原作者所有，请勿用于任何商业用途</a></div>
+					</div>
+				</div>
+			</div>
+			<!--友情链接-->
+			<div class="friendship-link-box">
+				<ul>
+					<li class="friendship-link-li">友情链接：</li>
+					<a class="#"><li>360全方位</li></a>
+					<a class="#"><li>1024家居网</li></a>
+					<a class="#"><li>书记在线阅读</li></a>
+					<a class="#"><li>1024精彩资讯</li></a>
+					<a class="#"><li>最新精品</li></a>
+				</ul>
+			</div>
+		</div><!--外背景-->
+	</body>
+</html>
+

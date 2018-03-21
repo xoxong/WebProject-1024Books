@@ -1,0 +1,1044 @@
+<!--
+            作者：931623824@qq.com
+            时间：2017-01-18
+            描述：1024小熊项目
+-->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8" />
+	<title>1024小书柜</title>
+	<meta name="keywords" content="1024免费电子书网,kindle电子书,txt电子书籍下载网" />
+	<meta name="description" content="1024免费小说网,免费提供弄txt,mobi,kindle小说资源"/>
+	<link rel="stylesheet" href="css/headXM.css" />
+	<link rel="stylesheet" href="css/indexXM.css" />
+	<link rel="stylesheet" href="css/bottomXM.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="ico_headerico.ico" media="screen" />
+	
+	<link rel="stylesheet" type="text/css" href="js/mf-pattern/mF_luluJQ.css"/>
+	<!--jq分页导入-->
+	<link rel="stylesheet" href="css/jquery.pagination/pagination.css" />
+	
+
+</head>
+<body >
+<!--窗口固定导航-->
+<div class="fixed-nav-box" id="fixed_nav">
+	<div class="fixed-nav">
+		<ul>
+			<li class="fixed-nav-li fixed-nav-title ">1024小书柜
+				<ul>
+					<a href="indexXM.html"><li>首页</li></a>
+					<a href="allBooksXM.html"><li>全部书籍</li></a>
+					<a href="informationXM.html"><li>资讯1024</li></a>
+				</ul>
+			</li>
+
+			<a href="###"><li class="fixed-nav-li">小说</li></a>
+			<a href="###"><li class="fixed-nav-li">玄幻</li></a>
+			<a href="###"><li class="fixed-nav-li">励志</li></a>
+			<a href="###"><li class="fixed-nav-li">体育</li></a>
+			<!--其他-->
+			<li class="fixed-nav-li fixed-nav-button">其他&nbsp;<img src="img/book-menu.png" width="10px"width="5px" />
+				<ul>
+					<a href=""><li class="fixed-nav-li3">科学</li></a>
+					<a href=""><li class="fixed-nav-li3">生活</li></a>
+					<a href=""><li class="fixed-nav-li3">英文</li></a>
+					<a href=""><li class="fixed-nav-li3">经典</li></a>
+
+					<a href=""><li class="fixed-nav-li3">科学</li></a>
+					<a href=""><li class="fixed-nav-li3">生活</li></a>
+					<a href=""><li class="fixed-nav-li3">英文</li></a>
+					<a href=""><li class="fixed-nav-li3">经典</li></a>
+
+					<a href=""><li class="fixed-nav-li3">科学</li></a>
+					<a href=""><li class="fixed-nav-li3">生活</li></a>
+					<a href=""><li class="fixed-nav-li3">英文</li></a>
+					<a href=""><li class="fixed-nav-li3">经典</li></a>
+
+					<a href=""><li class="fixed-nav-li3">科学</li></a>
+					<a href=""><li class="fixed-nav-li3">生活</li></a>
+					<a href=""><li class="fixed-nav-li3">英文</li></a>
+
+					<a href=""><li class="fixed-nav-li3">科学</li></a>
+					<a href=""><li class="fixed-nav-li3">生活</li></a>
+					<a href=""><li class="fixed-nav-li3">英文</li></a>
+
+				</ul>
+			</li>
+		</ul>
+		<!--搜索框 调用版权导航-->
+		<div class="copyright-nav fixed-nav-search">
+			<input class="copyright-input fixed-nav-input" name="copyright-input" type="tel" placeholder="试试搜索喜欢的书籍吧" />
+			<select class="copyright-select" name="search-select">
+				<option selected="selected" value="1">文章</option>
+				<option value="2">作者</option>
+				<option value="3">书名</option>
+				<option value="4">简介</option>
+				<option value="5">国家</option>
+			</select>
+			<a class="copyright-a fixed-nav-search-a" href="#">搜索</a>
+			<!--搜索内容显示方框-->
+			<div class="search-input-main2 search-input-ul">
+				<ul>
+					<li class="title">书名</li>
+					<li class="li1">《边城的的故事》--黄文仔</li>
+					<li class="li1">《海泽娜》--沙克斯</li>
+					<li class="li1">《洛泽或》--斯科拉</li>
+
+					<li class="title">作者</li>
+					<li class="li1">的奈尔--《释放的温情》</li>
+					<li class="li1">加升温</li>
+					<li class="li1">黄文涛</li>
+
+					<li class="title">推荐</li>
+					<li class="li1">《卡诺尔》--释放的文学</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--跳到顶部  悬浮-->
+<!--跳到顶部  悬浮-->
+<!--跳到顶部  悬浮-->
+<div class="upward" id="upward">
+	<ul>
+		<li><img src="img/qq_1.png" alt="顶部" />关注QQ</li>
+		<li class="upward-li2"><img src="img/weibo_2.png" alt="顶部" />关注微信</li>
+		<li class="upward-li3" onclick="upward()"><img src="img/up_1.png" alt="顶部" />返回顶部</li>
+	</ul>
+</div>
+<!--跳到顶部  悬浮 end-->
+<!--跳到顶部  悬浮 end-->
+<!--广告-->
+<div class="top-advertisementXM">
+	<div class="ad-xXM" onclick="closeAdv()">
+		<img src="img/x-03.png" alt="关闭" />
+	</div>
+</div>
+<!--网站级菜单-->
+<div class="web-menuXM">
+	<div class="web-menu-bgXM">
+	</div>
+	<div class="web-menu-boxXM">
+		<div class="web-menu-box-nXM">
+			<ul class="top-ul">
+				<a href="indexXM.html"><li class="top-li">1024小书柜</li></a>
+				<li class="top-li" onclick="sethome()">设为首页</li>
+				<li class="top-li" onclick="addhome()">收藏本站</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--logo,搜索菜单-->
+<div class="logo-nv-boxXM">
+	<!--logo-->
+	<div class="logo-box">
+		<a href="indexXM.html"><img alt="logo" src="img/logo.png" /></a>
+		<div class="nameBox">
+			<a class="web-name" href="indexXM.html">1024小书柜</a>
+			<a class="web-Describe" href="indexXM.html">你的书柜就在这里寻找，你的生活就是这样的存在</a>
+		</div>
+	</div>
+	<!--搜索-->
+	<div class="search-box">
+		<div class="null-1"></div>
+		<!--搜索分类-->
+		<div class="search-classify">
+			<!--<a class="search-classify-option">全部<img src="img/classify-128.png" width="18px" height="18px" alt="搜索分类"/></a>-->
+			<select class="search-select" name="search-select">
+				<option selected="selected" value="1">全部</option>
+				<option value="2">作者</option>
+				<option value="3">书名</option>
+				<option value="4">简介</option>
+				<option value="5">国家</option>
+			</select>
+		</div>
+		<!--输入框-->
+		<input name="search" placeholder="请输入要搜索的内容" type="text" class="search-input"/>
+		<!--搜索内容显示方框-->
+		<div class="search-input-main search-input-ul search-input-ul2">
+			<ul>
+				<li class="title">书名</li>
+				<li class="li1">《边城的的故事》--黄文仔</li>
+				<li class="li1">《海泽娜》--沙克斯</li>
+				<li class="li1">《洛泽或》--斯科拉</li>
+
+				<li class="title">作者</li>
+				<li class="li1">的奈尔--《释放的温情》</li>
+				<li class="li1">加升温</li>
+				<li class="li1">黄文涛</li>
+
+				<li class="title">推荐</li>
+				<li class="li1">《卡诺尔》--释放的文学</li>
+			</ul>
+		</div>
+		<!--确定按钮-->
+		<div class="search-yes"><span >确定</span><img src="img/search-128px.png" width="18px" height="18px" alt="确定按钮"/></div>
+		<!--热搜-->
+		<div class="hot-search">热搜：<a href="indexXM.html">我们都是好孩子 龙泽器作</a></div>
+	</div>
+	<!--<div class="nv-box"></div>-->
+	<!--<div class="keep-box"></div>-->
+</div>
+<!--导航-->
+<div class="menu-map-box-w">
+	<div class="navXM-Box">
+		<div class="navXM">
+			<!--导航选项-->
+			<ul class="nav-ul">
+				<img src="" alt="" />
+				<li class="nav-li-menu"><img alt="菜单" src="img/book-menu.png" width="24px" height="6px"/>书籍分类</li>
+				<a href="allBooksXM.html"><li class="nav-li">全部书籍</li></a>
+				<a href="allBooksXM.html"><li class="nav-li">热门排行</li></a>
+				<a href="allBooksXM.html"><li class="nav-li">最新书籍</li></a>
+				<a href="informationXM.html"><li class="nav-li">资讯1024</li></a>
+			</ul>
+
+		</div>
+	</div>
+	<!--菜单显示,导图栏-->
+	<!--外边框-->
+	<div class="menu-map-boxXM">
+		<div class="menu-box">
+			<!--菜单-->
+			<ul class="menu-ul">
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>小说</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>励志</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>经管</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>老虎</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>经典</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>同仁</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>人文</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>科技</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>历史</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>生活</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>其他</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>心里</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>英文</li>
+				<li class="menu-ul-li"><img src="img/menu-ico.png" alt="菜单图标" width="27px" height="27px"/>文学</li>
+			</ul>
+		</div>
+		<!--导图-->
+		<!--调用框架 myfocus-->
+		<div class="map-box" id="boxID">
+			<div class="pic">
+				<ul>
+					<li><a href=""><img src="img/book-img/img-1.jpg" alt="你的生活总是充满乐趣" /></a></li>
+					<li><a href=""><img src="img/book-img/img-2.jpg" alt="当然你还是需要有趣的故事"  /></a></li>
+					<li><a href=""><img src="img/book-img/img-3.jpg" alt="或许你并不知道" /></a></li>
+					<li><a href=""><img src="img/book-img/img-4.jpg" alt="旅游经典让你活跃" /></a></li>
+					<li><a href=""><img src="img/book-img/img-5.jpg" alt="你的生活总是充满乐趣" /></a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div><!--菜单显示,导图栏结束--></div>
+<div class="middleBox">
+	<!--书籍展示页面-->
+	<div class="bookshelf-boxXM">
+		<!--本周推荐-->
+		<div class="recommended-this-week">
+			<!-- 标题 -->
+			<div class="recommended-title">
+				<img src="img/book-menu -2.png" width="24px" height="6px" />
+				本周推荐
+			</div>
+			<!--书籍作品展示-->
+			<ul class="recommended-books">
+				<!--展开样式-->
+				<li class="recommended-open">
+					<!--清楚浮动-->
+					<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+					<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+					<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+					<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+					<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+				</li>
+				<li class="recommended-open">
+					<!--清楚浮动-->
+					<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+					<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+					<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+					<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+					<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+				</li>
+				<li class="recommended-open">
+					<!--清楚浮动-->
+					<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+					<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+					<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+					<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+					<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+				</li>
+
+
+				<!--<!-	---------特殊样式，可展开可关闭--------------------------------------------------------------------------------------------------->
+				<!--<!-	---------特殊样式，可展开可关闭--------------------------------------------------------------------------------------------------->
+				<!--<!-	---------特殊样式，可展开可关闭--------------------------------------------------------------------------------------------------->
+
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="deta/details.html" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="deta/details.html" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="deta/details.html" class="recommended-a2">作者：我的世界</a>
+						<a href="deta/details.html" class="recommended-a3">分类：历史</a>
+						<a href="deta/details.html" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+
+				<!--特殊展示页面结束------------------------------------------------------------------------------------------------------>
+				<!--特殊展示页面结束------------------------------------------------------------------------------------------------------>
+				<!--特殊展示页面结束------------------------------------------------------------------------------------------------------>
+
+			</ul>
+		</div>
+
+		<!--分类书籍展示，默认是去全部书籍-->
+		<div class="classified-books">
+			<!--调用最新下载的标题模板-->
+			<div class="recommended-title classified-title">
+				<img src="img/book-menu -2.png" width="24px" height="6px" />
+				全部书籍
+			</div>
+			<!--导航-->
+			<div class="classified-nav">
+				<ul>
+					<a href="##"><li class="classified-li1">全部作品</li></a>
+					<a href="##"><li class="classified-li2">最新上架</li></a>
+					<a href="##"><li class="classified-li2">热门下载</li></a>
+					<a href="##"><li class="classified-li4">更多>></li></a>
+				</ul>
+			</div>
+			<!--作品展示-->
+			<div class="classified-book-show">
+				<ul>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+					<a href="#"><li>
+						<img src="img/book-img/book1.png"width="125px" height="192px" />
+						<a>名称：一名星空当前转</a>
+						<a>作者：作为雨欣</a>
+						<a>标签：<span>文学</span><span>励志</span></a>
+					</li></a>
+
+				</ul>
+			</div>
+			<!--占位空div-->
+			<div class="classified-null"></div>
+			<!--分页-->
+			<div class="classified-paging">
+				<!--jq分页模板-->
+				<div class="pages">
+		        	<div id="Pagination"></div>
+			        <div class="searchPage">
+			          <span class="page-sum">共<strong class="allPage">30</strong>页</span>
+			          <span class="page-go">跳转<input type="text">页</span>
+			          <a href="javascript:;" class="page-btn">GO</a>
+			        </div>
+   				</div>
+			</div>
+			<!--占位空div-->
+			<div class="classified-null"></div>
+		</div>
+
+		<!--最新下载-->
+		<div  class="latest-download">
+
+			<!--调用本周推荐的模板-------------------------------------------------------------------------------------------------------------------------------->
+
+			<div class="recommended-title">
+				<img src="img/book-menu -2.png" width="24px" height="6px" />
+				最新下载
+			</div>
+			<!--书籍作品展示-->
+			<ul class="recommended-books">
+				<!--展开样式-->
+				<li class="recommended-open download-open">
+					<!--清楚浮动-->
+					<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+					<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+					<a href="#" class="recommended-a2">作者：我的世界</a>
+					<a href="#" class="recommended-a3">分类：历史</a>
+					<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+				</li>
+				<!--展开样式-->
+				<li class="recommended-open download-open">
+					<!--清楚浮动-->
+					<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+					<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+					<a href="#" class="recommended-a2">作者：我的世界</a>
+					<a href="#" class="recommended-a3">分类：历史</a>
+					<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+				</li>
+				<!--展开样式-->
+				<li class="recommended-open download-open">
+					<!--清楚浮动-->
+					<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+					<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+					<a href="#" class="recommended-a2">作者：我的世界</a>
+					<a href="#" class="recommended-a3">分类：历史</a>
+					<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+				</li>
+				<!--特殊------------------------------>
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+				<li class="recommended-open2 recommended-open download-open2 ">
+					<!--展开的样式 ，一般关闭-->
+					<div class="recommended-close">
+						<a href="#" class="clearboth"><img src="img/book-img/book1.png"width="75px" height="100px"/></a>
+						<a href="#" class="recommended-a1">名称：我的世界需要你</a>
+						<a href="#" class="recommended-a2">作者：我的世界</a>
+						<a href="#" class="recommended-a3">分类：历史</a>
+						<a href="#" class="recommended-a4">标签：<span class=" recommended-a4-span1">李泽天</span><span class=" recommended-a4-span1">李泽天</span></a>
+					</div>
+					<!--关闭之后的样式 一般打开  post帖子的意识。小帖子-->
+					<div class="recommended-post">
+						<a class="recommended-a5 download-a5"><span class="recommended-a5-span1">[小说]</span>鲁滨逊漂游记<span class="recommended-a5-span2">罗罗德</span></a>
+					</div>
+				</li>
+
+			</ul>
+
+			<!--调用本周推荐的模板--------------------------------------------------------------------------------------------------->
+		</div>
+	</div>
+	<!--1024资讯-->
+	<div class="information1024">
+		<!--标题菜单-->
+		<div class="information1024-menuBox">
+			<!--标题-->
+			<div class="information1024-title">
+				<a class="information1024-a1" href="#">1024资讯</a>
+				<a class="information1024-a2" href="#">大家都在关注什么问题你知道吗？最新KINDLES</a>
+			</div>
+			<!--菜单-->
+			<div class="information1024-menu">
+				<ul>
+					<a href="#"><li>新闻</li></a>
+					<a href="#"><li>时尚</li></a>
+					<a href="#"><li>科技</li></a>
+				</ul>
+			</div>
+		</div>
+		<!--展示页面-->
+		<div class="information1024-show">
+			<ul>
+				<a href="#"><li>
+					<!--透明-->
+					<div class="information1024-show-div">
+						<a class="information1024-show-a1">快乐的今天让你知道什么是温馨的生活【当然】这只</a>
+						<a class="information1024-show-a2">直觉告诉你以后写东西是说不刺青阿斯顿阿三阿斯顿但是我就是系怀念和你耍哦但是当然年你挠死你看撒可能都</a>
+						<a class="information1024-show-a3">已阅读：15255次<span>作者：小熊</span></a>
+					</div>
+				</li></a>
+				<a href="#"><li>
+					<!--透明-->
+					<div class="information1024-show-div">
+						<a class="information1024-show-a1">快乐的今天让你知道什么是温馨的生活【当然】这只</a>
+						<a class="information1024-show-a2">直觉告诉你以后写东西是说不刺青阿斯顿阿三阿斯顿但是我就是系怀念和你耍哦但是当然年你挠死你看撒可能都</a>
+						<a class="information1024-show-a3">已阅读：15255次<span>作者：小熊</span></a>
+					</div>
+				</li></a>
+				<a href="#"><li>
+					<!--透明-->
+					<div class="information1024-show-div">
+						<a class="information1024-show-a1">快乐的今天让你知道什么是温馨的生活【当然】这只</a>
+						<a class="information1024-show-a2">直觉告诉你以后写东西是说不刺青阿斯顿阿三阿斯顿但是我就是系怀念和你耍哦但是当然年你挠死你看撒可能都</a>
+						<a class="information1024-show-a3">已阅读：15255次<span>作者：小熊</span></a>
+					</div>
+				</li></a>
+				<a href="#"><li>
+					<!--透明-->
+					<div class="information1024-show-div">
+						<a class="information1024-show-a1">快乐的今天让你知道什么是温馨的生活【当然】这只</a>
+						<a class="information1024-show-a2">直觉告诉你以后写东西是说不刺青阿斯顿阿三阿斯顿但是我就是系怀念和你耍哦但是当然年你挠死你看撒可能都</a>
+						<a class="information1024-show-a3">已阅读：15255次<span>作者：小熊</span></a>
+					</div>
+				</li></a>
+
+			</ul>
+		</div>
+	</div>
+</div><!--middle-->
+<!--尾部版权-->
+<!--外背景-->
+<div class="bottomXM-box-w">
+	<!--版权部分外框-->
+	<div class="copyright-box">
+		<!--版权部分内-->
+		<div class="copyright-box-n">
+			<!--左边-->
+			<div class="copyright-1 copyright-left">
+				<!--占位-->
+				<div class="copyright-null1"></div>
+				<!--搜索框-->
+				<div class="copyright-nav ">
+					<input class="copyright-input bottom-nav-input" name="copyright-input" type="tel" placeholder="试试搜索喜欢的书籍吧" />
+					<select class="copyright-select" name="search-select">
+						<option selected="selected" value="1">文章</option>
+						<option value="2">作者</option>
+						<option value="3">书名</option>
+						<option value="4">简介</option>
+						<option value="5">国家</option>
+					</select>
+					<a class="copyright-a" href="#">搜索</a>
+					<!--搜索内容显示方框-->
+					<div class="search-input-main3 search-input-ul search-input-ul3">
+						<ul>
+							<li class="title">书名</li>
+							<li class="li1">《边城的的故事》--黄文仔</li>
+							<li class="li1">《海泽娜》--沙克斯</li>
+							<li class="li1">《洛泽或》--斯科拉</li>
+
+							<li class="title">作者</li>
+							<li class="li1">的奈尔--《释放的温情》</li>
+							<li class="li1">加升温</li>
+							<li class="li1">黄文涛</li>
+
+							<li class="title">推荐</li>
+							<li class="li1">《卡诺尔》--释放的文学</li>
+						</ul>
+					</div>
+				</div>
+				<!--占位-->
+				<div class="copyright-null2"></div>
+				<!--关注1024-->
+				<div class=" copyright-follow">
+					关注我们：<a><img src="img/wechat1.png" width="32px" height="32px" /><img class="img-2" src="img/QR Code.png" alt="lallla" width="100px" height="100px" /></a> 1024小书柜<span class="copyright-follow-span">(点击查看二维码)</span>
+					<a><img src="img/sina1.png" width="32px" height="32px" /><img class="img-2" src="img/QR Code.png" alt="lallla" width="100px" height="100px" /></a> 1024小书柜<span class="copyright-follow-span">(点击查看二维码)</span>
+				</div>
+				<!--版权声明-->
+				<div class="copyright-state">
+					Copyright © 2016-2017 1024Books.com All rights reserved.  黔ICP备17000104号-1
+				</div>
+				<!--关于我们-->
+				<div class="copyright-concern">
+					<ul>
+						<a><li class="copyright-concern_li">关于我们 </li></a>
+						<a><li>免责声明 </li></a>
+						<a><li>网站地图  </li></a>
+						<a><li>资讯新闻</li></a>
+						<a><li>留言反馈</li></a>
+					</ul>
+				</div>
+			</div>
+			<!--右边-->
+			<div class="copyright-1 copyright-right">
+				<!--调用占位-->
+				<div class="copyright-null1"></div>
+				<!--联系我们-->
+				<div class="copyright-contact-box">
+					<!--378*130-->
+					<div class="copyright-contact">
+						<a>联系我们</a>
+						<a>电子邮箱：931623824@qq.com,1279724190@qq.com</a>
+						<a>在线咨询：931623824 / 1279724190</a>
+						<a>联系地址：上海浦东新区东葛路2525号</a>
+					</div>
+					<!--二维码-->
+					<div class="copyright-wechat">
+						<img src="img/QR Code.png" width="130px" height="130px" />
+						<div class="copyright-wechat-font">
+							<a>官方微信</a>
+							<a>扫一扫</a>
+							<a>更多精彩</a>
+							<a>资讯</a>
+						</div>
+					</div>
+				</div>
+
+				<!--本站声明-->
+				<div class="copyright-site-statement"><a>本站声明：本站提供的图片仅供学习和交流使用，版权归原作者所有，请勿用于任何商业用途</a></div>
+			</div>
+		</div>
+	</div>
+	<!--友情链接-->
+	<div class="friendship-link-box">
+		<ul>
+			<li class="friendship-link-li">友情链接：</li>
+			<a class="#"><li>360全方位</li></a>
+			<a class="#"><li>1024家居网</li></a>
+			<a class="#"><li>书记在线阅读</li></a>
+			<a class="#"><li>1024精彩资讯</li></a>
+			<a class="#"><li>最新精品</li></a>
+		</ul>
+	</div>
+</div><!--外背景-->
+
+<!--jq调用-->
+	<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--本地调用-->
+	<script type="text/javascript" src="js/headXM.js" ></script>
+	<script src="js/indexXM.js" type="text/javascript"></script>
+	<!--jq分页导入-->
+	<script src="js/jquery.pagination/jquery.pagination.js" type="text/javascript" charset="utf-8"></script>
+	<!--框架调用-->
+	<script type="text/javascript" src="js/myfocus-2.0.4.min.js" ></script>
+	<script src="js/mf-pattern/mF_luluJQ.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

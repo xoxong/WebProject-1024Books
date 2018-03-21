@@ -1,0 +1,544 @@
+
+/*预设定*/
+*{ margin:0; padding:0;}
+/*body{ font-size:12px; font-family: Verdana, Arial, Helvetica, sans-serif;color:black;background:url(../img/bg.jpg) fixed no-repeat;background-size: 1920px 1080px;}*/
+ul{list-style-type: none; margin:0; padding:0}
+a:hover{ cursor: pointer;}
+a{
+	text-decoration: none;
+	color: black;
+}
+/*菜单*/
+.information-menu-box-w{
+	width: 100%;height: 442px;
+	box-shadow: 0px 5px 15px #5E5E5E;
+	background-color: #3e3d43;
+}
+.information-menu-box-n{
+	width: 1220px;height: auto;
+	margin: 0 auto;
+
+}
+/*导航*/
+.information-nav-box{
+	width: 1220px;height: 40px;
+}
+.information-nav-box li{
+	color:white;
+	float: left;
+	width: 172px;height: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 1.2em;
+}
+.information-nav-box li:hover{
+	color: #ed4259;
+	/*文字描边*/
+	/*-webkit-text-stroke: 0.1px white;*/
+
+}
+.information-li-homepage{
+	width: 192px !important;
+	background-color: #252428 !important;
+	text-align: left !important;
+	padding-left: 26px;
+}
+.information-li-homepage:hover{
+	color: white !important;
+}
+.information-li-1024{
+	border: 1px solid white;
+	background-color: #ED4259;
+	border-top: 1px solid #ED4259 !important ;
+}
+.information-li-1024:hover{
+	color: white !important;
+}
+.information-li-homepage img{
+	vertical-align: middle;
+	margin-right: 6px;
+}
+/*轮播+资讯*/
+.information-carousel-box-w{
+	width: 1220px;height: 344px;
+	margin-top: 27px;
+	
+}
+/*轮播部分*/
+.information-carousel-box-n{
+	width:auto;
+    height: 100%;
+}
+/*左边*/
+/*左边轮播图框架*/
+.information-carousel-left{
+	float: left;
+	width: 643px;height: 344px;
+	border: 2px solid white;	
+}
+/*设置图片的大小以及整个框的大小*/
+.information-slider,.information-slider-main,.information-slider-panel img{
+	width:643px;height:344px;
+}
+.information-slider{
+	position: relative;
+}
+.information-slider-panel{
+	position: absolute;
+}
+/*设置四个按钮*/
+.information-slider-nav{
+	position: absolute;
+	z-index: 22;
+	left: 40%;
+	bottom: 5px;
+	margin: 0 auto;
+}
+/*隐藏文字*/
+.information-slider-nav span{
+	display: none;
+}
+.information-slider-nav li{
+	width: 30px;
+	height: 20px;
+	color: #2C2C31;
+	text-align: center;
+	line-height: 20PX;
+	background-color: #EFEEEF;
+	margin-left: 3px;
+	float: left;
+}
+.information-slider-nav li:hover{
+}
+.information-slider-nav li:hover span{
+}
+
+/*按钮更随变动颜色*/
+.slider-item-selected{
+	background-color:#ed4259 !important;
+	width: 150px!important;
+	color: white!important;
+}
+/*左右按钮的颜色*/
+/*.information-slider-page a{
+	background: rgba(0, 0, 0, 0.2);
+	color: white;
+	text-align: center;
+	font-family: simsun;
+	font-size: 22px;
+	width: 28px;
+	height: 62px;
+	line-height: 62px;
+	position: absolute;
+	top: 40%;
+}*/
+/*右边按钮单独设置*/
+/*.information-slider-next{
+	left: 100%;
+	margin-left: -28px;
+}*/
+/*右边*/
+.information-carousel-right{
+	float: left;
+	width: 138px;height: 317px;
+	margin-left: 5px;
+	margin-top: 17px;
+}
+
+.information-carousel-right li{
+	width:134px;height: 70px;
+	margin-bottom: 5px;
+	border: 2px solid white;
+}
+.information-carousel-right img{
+	width: 134px;
+	height: 70px;
+}
+/*动画效果*/
+.information-carousel-right li:hover{
+	box-shadow: 1px 1px 15px #A7A6A6 ;
+	  animation: hovering 1s forwards ;
+	  /*forwards：当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。*/
+}
+ 		@keyframes hovering{
+          0% {margin-left: 0px;}
+          100% {margin-left: 10px;}
+        }
+ 
+/*文字部分 使用li设置*/
+.information-carousel-information{
+	width: 390px;
+	float: right;
+	
+}
+.information-carousel-ul li{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.information-li-title{
+	font-size: 1.7em;
+	color: white;
+	float: left;
+}
+.information-li-describe{
+	color: #C8C8C8;
+	font-size: 0.8em;
+	padding-top: 9px;
+	height: 54px;
+	width: 100%;
+}
+.information-more{
+	margin-top: 4px;
+	float: right;
+	color: #C8C8C8;
+	text-align: right;
+}
+.information-more:hover{
+	color: #ed4259;
+	cursor: pointer;
+}
+.information-hr{
+	width: 100%;
+	height: 1px !important;
+	background-color:#EFEEEF;
+    margin-top: 10px;
+}
+.information-li-news{
+	float: left;
+    padding-top: 13px;
+    color:#d3d3d3;
+    font-size: 1em;
+}
+.information-li-news:hover{
+	color: white;
+}
+.information-li-news span{
+	float: right;
+	color: #929292;
+	
+}
+/*内容部分*/
+.information-main{
+	width:1220px;
+	height:500px;
+	margin:0 auto;
+	margin-top: 28px;
+}
+.information-main-left{
+	width: 790px;
+	height: auto;
+	margin-right: 19px;
+	float: left;
+}
+.information-main-right{
+	width: 390px;
+	height: auto;
+	float: right;
+}
+.information-main-title{
+	font-style: oblique;
+	width: 100%;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	float: left;
+}
+.information-main-title span{
+	color: #929292;
+	margin-left: 2px;
+	font-size: 0.8em !important;
+}
+.information-main-title a{
+	float: right;
+	color: #929292;
+	font-size: 0.8em !important;
+}
+.information-main-title a:hover{
+	color: #ED4259;
+}
+/*推送书籍卡片*/
+.information-main-card-box{
+	width: 790px;
+	height: auto;
+}
+.information-main-card{
+	width: 391px;
+	height: 103px;
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	background-color: white;
+	border: 1px solid #A7A6A6;
+
+}
+.information-main-card:hover{
+	cursor: pointer;	
+	box-shadow: 1px 1px 15px #2C2C31;
+	
+}
+.information-main-card img{
+	margin: 10px 10px 0px 13px;
+	float: left;
+}
+.information-main-card ul{
+	width: 275px;
+	float:right;
+
+}
+.information-main-card .li1{
+	width: 100%;
+	height: 17px;
+	margin-top: 15px;
+	color: black;
+	font-size: 1.2em;
+	font-weight: bold;
+	overflow: hidden;
+}
+.information-main-card .li2{
+	margin-top: 12px;
+	color: #888888;
+	height: 32px;
+	width: 100%;
+	overflow: hidden;
+}
+.information-main-card .li3{
+	width: 100%;
+	color: #888888;
+	text-align: center;
+}
+/*资讯快车*/
+.information-main-title2{
+	margin-top: 18px;
+}
+.information-main-bigimg{
+	width: 792px;
+	height: 123px;
+	background-image: url(../img/main-card/main-big-1.png);
+	background-size: 100% 123px;
+	float: left;
+}
+.information-main-card2{
+	width: 100%;
+	height: 83px;
+	float: left;
+	border: 1px solid #A7A6A6;
+	background-color: white;
+	margin-top: 1px;
+}
+.information-main-card2:hover{
+	box-shadow: 1px 1px 20px #DCDCDC;
+}
+
+.information-main-card2 ul{
+	margin: 12px 14px 0 14px;
+}
+.information-main-card2 .li1{
+	color: #ED4259;
+	width: 636px !important;
+	height: 17px !important;
+	overflow: hidden;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.information-main-card2 .li2{
+	margin-top: 5px;
+	color: #888888;
+	text-indent: 25px;
+}
+.information-main-card2 .li3{
+	float: right;
+	color: #888888;
+}
+.information-main-card2 .li3:hover{
+	color: #ED4259;	
+}
+/*资讯卡片*/
+.information-main-card3-box{
+	width: 100%;
+	height: auto;
+	float: left;
+	background-color: white;
+}
+.information-main-card3{
+	width: 100%;
+	height: 138px;
+	border: 1px solid #A7A6A6;
+	margin-top: 3px;
+}
+.information-main-card3:hover{
+	box-shadow: 1px 1px 15px #2C2C31;
+}
+.information-main-card3 img{
+	float: left;
+	margin: 12px;
+}
+.information-main-card3 ul{
+	width: 600px;
+	float: left;
+	height: 20px;
+	margin: 19px 0 0 0px;
+	line-height: 20px;
+}
+.information-main-card3 ul li{
+	margin-right: 15px;
+	color: #888888;
+	float: left;
+	border: 1px solid #DADADA;
+	padding: 0 5px;
+}
+.information-main-card3 .li1{
+	float: left;
+	color: white;
+	border: 0px !important;
+	background-color: #5FDB52;
+	padding: 0 5px;
+}
+.information-main-card3 .a1{
+	width: 570px;
+	height: 17px;
+	font-size: 1.2em;
+	font-weight: bold;
+	overflow: hidden;
+	float: left;
+	margin-top: 13px;
+}
+.information-main-card3 .a2{
+	width: 601px;
+	height: 47px;
+	overflow: hidden;
+	float: left;
+	margin-top: 8px;
+	color: #888888;
+	text-indent: 25px;
+}
+/*更多精彩资讯*/
+.information-main-card3-more{
+	font-style: oblique;
+	color: #888888;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	line-height: 60px;
+	font-size: 1.2em;
+}
+.information-main-card3-more:hover{
+	color: #ed4259;
+}
+/*右边的功能*/
+.origin1024{
+	height: 176px;
+	border: 1px solid #A7A6A6;
+}
+.origin1024 span{
+	width: 157px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	margin-left: 14px;
+	color: white;
+	background-color: #5cb85c;
+	display: block;
+	font-size: 1.2em;
+}
+.origin1024 ul{
+	margin-left: 14px;
+}
+.origin1024 .li1{
+	color: #5cb85c;
+	margin-top: 25px;
+	font-size: 2em;
+	font-style: oblique;
+}
+.origin1024 .li2{
+	margin-top: 10px;
+	text-indent: 25px;
+	padding-right: 15px;
+	color:#888888 ;
+	font-size: 1.2em;
+	overflow: hidden;
+	padding-bottom: 12px;
+	height: 48px;
+}
+/*滚动标签*/
+.information-main-right .label1{
+	width: 100%;
+	height: 298px;
+	background-color: #3E3D43;
+	margin-top: 2px;
+}
+/*3d*/
+#tagsList{
+	position:relative; width:100%; height:298px; margin:0 auto;
+}
+#tagsList a {
+	position:absolute; 
+	top:0px; left:0px; 
+	color:#fff; 
+	font-weight:bold; 
+	text-decoration:none; 
+	padding: 3px 6px; 
+}
+#tagsList a:hover 
+{ 
+	color:#FF0000; 
+	letter-spacing:2px;
+}
+/*滚动标签END*/
+.information-main-right .title1{
+	height: 35px !important;
+	line-height: 50px;
+}
+.information-main-right .card{
+	width: 388px !important;
+	margin-top: 2px;
+}
+.information-main-right .li3{
+	text-align: right !important;
+	margin-top: 5px;
+	color: #B2B2B2 !important;
+	width: 262px !important;
+}
+.information-main-right .refreshXM{
+	width: 90px;
+	height:25px;
+	border: 1px solid #A7A6A6 ;
+	text-align: center;
+	line-height: 25px;
+	float: right;
+	border-top: 0px;
+	margin-top: -2px;
+}
+.information-main-right .refreshXM:hover{
+	cursor:pointer;
+	color: #ED4259;
+}
+/*标签2*/
+.information-main-right .label2{
+	width: 100%;
+	height: 156px;
+	float: left;
+	margin-top: 2px;
+	border: 1px solid #A7A6A6;
+	background-image: url(../img/book-img/img-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	
+}
+.information-main-right .label2 span{
+	width: 20px;
+	height: 20px;
+	color: white;
+	font-size: 2em;
+	text-align: center;
+	line-height: 16px;
+	padding-left: 2px;
+	background-color:#A7A6A6 ;
+	display: block;
+	position: absolute;right: 0px;bottom: 0px;
+}
+.information-main-right .label2 span:hover{
+	background-color: #ed4259;
+	cursor: pointer;
+}

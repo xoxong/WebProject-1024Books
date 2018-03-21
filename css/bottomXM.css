@@ -1,0 +1,250 @@
+
+/*预设定*/
+*{ margin:0; padding:0;}
+/*body{ font-size:12px; font-family: Verdana, Arial, Helvetica, sans-serif;color:black;background:url(../img/bg.jpg) fixed no-repeat;background-size: 1920px 1080px;}*/
+ul{list-style-type: none; margin:0; padding:0}
+a:hover{ cursor: pointer;}
+a{
+	text-decoration: none;
+	color: black;
+}
+/*版权+友情链接*/
+.bottomXM-box-w{
+	width: 100%;height: 294px;
+	float: left;
+	background-image: url(../img/botton.png);
+	
+}
+/*版权部分*/
+.copyright-box{
+	width: 100%;height:234px;
+	margin-top: 20px;
+	float: left;
+	background-color: #48474d;
+	background-color: rgba(64,63,68,0.95);
+	/*background-color: rgba(0,0,0,0.9);*/
+}
+.copyright-box-n{
+	width: 1220px;height: 100%;
+	margin: 0 auto;
+}
+.copyright-1{
+	width: 50%;height: 100%;
+	float: left;
+}
+/*占位*/
+.copyright-null1{
+	width: 100%;height: 36px;
+}
+/*搜索*/
+.copyright-nav{
+	width: 344px;height: 47px;
+	border: 1px solid #d3d3d3;
+	background-color: white; 
+	position: relative;
+}
+/*搜索框内容*/
+.search-input-main3{
+	width: 289px;
+	height:auto;
+	background-color: white;
+	border: 1px solid gainsboro;
+	position: absolute;
+	bottom: 47px;
+	left: -1px;
+	box-shadow: 0px -3px 10px gainsboro;
+	-moz-box-shadow: 0px -3px 10px gainsboro;
+	-webkit-box-shadow: 0px -3px 10px gainsboro;
+	display: none;
+}
+/*搜索内容设定*/
+.search-input-ul3 ul{
+	width: 289px;
+}
+.search-input-ul3 ul li{
+	width: 269px;
+}
+.search-input-ul3 ul .title{
+	width: 269px;
+}
+.copyright-input{
+	width: 225px;height: 47px;
+	display: block;
+	border: 0px;
+	float: left;
+	outline: none;
+	padding-left: 15px;
+}
+.copyright-select{
+	width: 50px;height:100%;
+	border: 0px;
+	float:left;
+	outline: none;
+}
+.copyright-a{
+	width:54px;height: 100%;
+	text-align:  center;
+	line-height:47px;
+	display: block;
+	float: left;
+	font-weight: bold;
+	color: #ed4259;
+	/*background-color: #ed4259;*/
+}
+.copyright-a:hover{
+	color:white;
+	font-weight: 100;
+	background-color: #ed4259;
+}
+
+/*占位*/
+.copyright-null2
+{
+	width: 100%; height: 23px;
+}
+/*关注我们 点开有微信*/
+.copyright-follow{
+	width: auto;height: 32px;
+	color: white;
+}
+.copyright-follow a{
+	position: relative;
+}
+.copyright-follow .img-2{
+	position: absolute;
+	top: -110px;
+	right: 0;
+	margin-left: -20px;
+	box-shadow: 1px 1px 30px black;
+	display: none;
+}
+/*弹出微信*/
+.copyright-follow a:hover .img-2{
+	display: block;
+	animation: copyright-follow-img 2s forwards ;	
+}
+@keyframes copyright-follow-img{
+          0% {height: 50px;width: 50px;}
+          100% {height: 100px;}
+       }
+       
+.copyright-follow-span{
+	color: white;
+	margin:0 2px;
+	font-size:0.9em;
+}
+/*版权声明*/
+.copyright-state{
+	color: white;
+	width: auto;height: 57px;
+	line-height: 57px;
+}
+/*关于我们*/
+.copyright-concern{
+	width: auto;height:25px;
+}
+.copyright-concern ul{
+	width: 100%;height: 25px;
+}
+
+.copyright-concern li{
+	color: white;
+	float: left;
+	padding: 0 15px;
+	border-left: 1px solid #B8B8B8;
+	
+}
+.copyright-concern_li{
+	border-left: 0px !important;
+	padding-left:0px !important ;
+	
+}
+.copyright-concern li:hover{
+	color: #ed4259;
+}
+
+/*联系我们*/
+.copyright-contact-box{
+	width: 100%;height: 150px;
+}
+.copyright-contact{
+	width: 378px;height: 150px;
+	float: left;
+}
+.copyright-contact a{
+	color: white;
+	height: 38px;
+	width: 100%;
+	display: block;
+	float: left;
+}
+/*二维码*/
+.copyright-wechat{
+	width: 225px;height:130px;
+	float: left;
+}
+.copyright-wechat-font{
+	width: 95px;height: 130px;
+	float: right;
+}
+.copyright-wechat a{
+	color: white;
+	float: left;
+	display: block;
+	width:95px;height: 30px;
+	line-height: 42px;
+	padding-left: 10px;
+	color: #bcbcbc;
+} 
+
+/*本站声明*/
+.copyright-site-statement a{
+	width: 100%;height:auto;
+	margin-top: 10px;
+	display: block;
+	float: left;
+	color: white;
+}
+
+
+/*图片垂直居中*/
+.copyright-follow img{
+	margin: 0 2px;
+	vertical-align: middle;
+	border: 1px solid white;
+	border-radius:15px
+}
+.copyright-span{
+	color:#D5D5D5;
+	margin-left: 2px;
+}
+/*友情链接*/
+.friendship-link-box{
+	width: 100%;height: 44px;
+	background-color: #2c2c31;
+	float: left;
+}
+.friendship-link-box ul{
+	width: 1220px;height: 44px;
+	margin: 0 auto;
+}
+.friendship-link-box li{
+	width: auto;height: 44px;
+	color: white;
+	font-size: 1.1em;
+	text-align: center;
+	line-height: 44px;
+	padding: 0 10px;
+	margin-right: 10px;
+	float: left;
+}
+.friendship-link-li{
+	padding: 0px !important;
+}
+.friendship-link-box li:hover{
+	color: #ed4259;
+}
+.friendship-link-li:hover{
+	color: white !important;
+	
+}

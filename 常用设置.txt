@@ -1,0 +1,45 @@
+
+1024小书柜
+--------------------------------
+--------------------------------
+
+//灰色边框
+border: 1px solid #A7A6A6;
+//斜体
+font-style: oblique;
+//常用绿色
+#5cb85c
+//常用红色
+#ed4259
+//艳丽的红色
+#FF2832
+//常用灰色 头部底部
+#3E3D43
+
+--------------------------------END
+--------------------------------END
+
+/*----------居中-------ie的兼容样式--------*/
+	position: relative;
+	left: 50%;
+	margin-left: -600px;
+	
+/*----------animation 使用方式------------*/
+.aaa{	animation:fixed-nav-box-show 1s forwards ; }
+
+ @keyframes fixed-nav-box-show{
+	0%{height: 40px;}
+	100%{height: 48px;}
+}
+
+/*----------背景图片自适应------------*/
+background-size:cover 当使用该属性时，图片将被缩放至恰好能覆盖div
+
+//返回上一页
+	history.go(-1);
+	
+
+
+
+
+

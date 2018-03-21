@@ -1,0 +1,347 @@
+
+/*预设定*/
+*{ margin:0; padding:0;;}
+/*body{ font-size:12px; font-family: Verdana, Arial, Helvetica, sans-serif;color:black;}*/
+ul{list-style-type: none; margin:0; padding:0}
+a:hover{ cursor: pointer;}
+a{
+	text-decoration: none;
+	color: black;
+}
+/*书籍展示页面 默认全部书籍*/
+.middleBox{
+	width: 1220px;height:auto;
+	margin:0 auto;
+}
+.bookshelf-boxXM{
+	width:1220px ;height: auto;
+	float: left;
+	margin: 0 auto;
+	margin-top: 30px;
+	
+}
+/*本周推荐*/
+.recommended-this-week{
+	width: 217px; height: auto;
+	float: left;
+	/*background-color:#C8C8C8 ;*/
+}
+/*标题*/
+.recommended-title {
+	width: 100%;height: 30px;
+	line-height: 26px;
+	font-size: 1.2em;
+	border-bottom: 1px solid #3e3d43;
+}
+/*书籍展示页面*/
+.recommended-open{
+	width: auto;height:100px ;
+	border: 1px solid #d4d4d4;
+	margin:8px 0 0 0 ;
+	background-color:white;
+}
+/*四周阴影*/
+.recommended-open:hover{
+	background-color: white;
+	-moz-box-shadow: 1px 1px 15px #ed4259; /* 老的 Firefox */
+	box-shadow: 1px 1px 15px #ed4259;
+	margin-left:-5px;
+}
+.recommended-open img{
+	margin-right: 10px;
+		float: left;
+}
+.recommended-open a{
+	width: 100%;
+	height: 22px;
+	line-height: 33px;
+	display: block;	
+
+}
+/*清楚浮动*/
+.clearboth{
+	width: 0px !important;height: 0px !important;
+	
+}
+.recommended-a4
+{
+	height: 32px !important;
+}
+.recommended-a4-span1{
+	margin-right: 5px;
+	color: white;
+	background-color: #5fdb52;
+	padding:  2px;
+	font-size: 0.9em;
+	
+}
+/*特殊样式，可展开可关闭*/
+/*修改第四个以后的特殊样式*/
+.recommended-open2{
+	width:auto ;height: auto;
+	border: 0px !important;
+	background-color:rgba(0,0,0,0);
+	
+}
+/*帖子样式 */
+.recommended-a5{
+	border-bottom: 1px solid #dcdcdc;
+	width:215px;height: 36px!important;
+	line-height: 36px;
+	display:block;
+}
+.recommended-a5-span1{
+	color: #b2b2b2;
+	margin-right: 10px;
+}
+.recommended-a5-span2{
+	color: #b2b2b2;
+	float: right;
+}
+/*小帖子的颜色*/
+.recommended-post{
+	background-color:white;
+	/*设置透明度*/
+	background-color:rgba(0,0,0,0)
+}
+/*正常情况下关闭大的展示页面*/
+.recommended-close{
+	display: none;
+	background-color: white;
+}
+/*hover显示展示页面*/
+.recommended-open2:hover .recommended-close{
+	display: block;
+}
+.recommended-open2:hover .recommended-post{
+	display: none;
+}
+
+
+
+
+/*分类书籍*/
+.classified-books{
+	width: 756px;height:auto;
+	margin-left: 4px;
+	float: left;
+	/*background-color:#C8C8C8 ;*/
+	
+}
+.classified-title{
+	border: 0px !important;
+}
+/*导航*/
+.classified-nav{
+	width: 100%;height: 38px;
+	background-color: #3e3d43;
+	margin-bottom: 5px;
+}
+.classified-nav li{
+	width: 148px;height: 100%;
+	margin-right: 5px;
+	text-align: center;
+	line-height: 38px;
+	color: white;
+	font-size: 1.1em;
+	float: left;
+}
+.classified-li1{
+	background-color: #ed4259;
+	
+}
+.classified-li4{
+	float: right !important;
+	width: 60px !important;
+	margin-right: 0px !important;
+}
+.classified-li2:hover{
+	border: 2px solid white;
+	width: 144px; height: 34px;
+	line-height: 34px;
+	background-color: #ed4259;
+}
+.classified-li4:hover{
+	color: #ed4259;
+}
+/*作品展示*/
+.classified-book-show{
+	width: 100%;height:auto;
+	
+}
+
+.classified-book-show li{
+	width: 187px;height: 300px;
+	border: 1px solid #d4d4d4;
+	float: left;
+	background-color: white;
+	
+	
+}
+.classified-book-show li:hover{
+	background-color: white;
+	box-shadow: 1px 1px 15px #ed4259;
+	
+}
+
+.classified-book-show img{
+	text-align: center;
+	margin-top:30px;
+
+}
+.classified-book-show a{
+	display: block;
+	font-size: 1em;
+	text-align: left;
+	margin-bottom: 5px;
+	margin-left: 30px;
+}
+.classified-book-show span{
+	background-color: #32bbd3;
+	padding: 2px 3px;
+	margin-right: 5px;
+	color: white;
+}	
+/*站位空格*/
+.classified-null{
+	width: 100%;
+	height: 34px;
+	float: left;
+
+}
+/*分页*/
+.classified-paging{
+	width: 100%;height: 52px;
+	float: left;
+	/*border: 1px solid #d5d5d5;*/
+	background-color: white;
+	
+}
+
+/*最新下载*/
+.latest-download{
+	width:239px ;height:auto;
+	margin-left: 4px;
+	float: left;
+}
+/*展开样式下载*/
+.download-open{
+	width: 239px !important;
+}
+.download-open:hover{
+	margin-left:5px !important;
+}
+/*特殊*/
+.download-a5{
+	width: 239px !important;
+}
+.download-open2:hover{
+	width: 240px !important;
+	margin-left: 4px !important;
+}
+
+
+/*1024资讯*/
+.information1024{
+	width: 1220px;height: auto;
+	float: left;
+	margin: 0 auto;
+}	
+/*1024菜单*/
+.information1024-menuBox{
+	width: 619px;height: 46px;
+	margin: 0 auto;
+	border-bottom:1px solid black ;
+}
+.information1024-title{
+	width: 50%;height: 100%;
+	float: left;
+}
+.information1024-title a{
+	color: #929292;
+	float: left;
+}
+.information1024-a1{
+	font-size: 1.8em;
+	margin-bottom: 1px;
+	color: black !important;
+}
+.information1024-menu{
+	width: 50%;height: 100%;
+	color: black;
+	float: right;
+}
+.information1024-menu li{
+	width:auto;height: 45px;
+	padding: 0 15px;
+	text-align: center;
+	line-height: 65px;
+	font-size: 1.1em;
+	float: right;	
+}
+.information1024-menu li:hover{
+	color: red;
+	font-weight: bold;
+	height: 45px;
+	border-bottom: 3px solid #18a3f2;
+}
+/*1024展示页面*/
+.information1024-show{
+	width: 100%;height:234px;
+	float: left;
+	margin-top: 19px;
+	margin-bottom: 0px;
+}
+.information1024-show ul{
+	width: 100%;height: 100%;
+}
+.information1024-show li{
+	width:301px;height: 100%;
+	background-color: white;
+	background: url(../img/1024bg2-03.png);
+	margin-right: 4px;
+	float: left;
+}
+/*显示透明图层*/
+.information1024-show li:hover .information1024-show-div{
+	width: 100%;height: 100%;
+	/*background-color: black;*/
+	/*background-color:rgba(0,0,0,0.7);*/
+	 animation: information1024-show 2s forwards ;	
+}
+
+@keyframes information1024-show{
+          0% {background-color:rgba(0,0,0,0.1)}
+          100% {background-color:rgba(0,0,0,0.7)}
+       }
+.information1024-show li a{
+	color: white;
+	font-size: 1.2em;
+	padding-left: 18px !important;	
+	float: left;
+}
+.information1024-show-a1{
+	width:a;height: 55px;
+	margin-top: 28px;
+	padding: 10px;
+	font-size: 1.8em !important;
+	
+}
+.information1024-show-a2{
+	margin-top: 0px;
+	padding: 10px;
+	padding-top: 5px !important;
+	
+}
+.information1024-show-a3{
+	
+	margin-top: 15px;
+	padding: 15px;
+	color: #C8C8C8 !important; 
+}
+.information1024-show-a3 span{
+	margin-left: 50px;
+
+}
+
+

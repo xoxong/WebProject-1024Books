@@ -1,0 +1,179 @@
+/*预设定*/
+*{ margin:0; padding:0;}
+body{ font-size:12px; font-family:"微软雅黑";background-color: #f9f9f9;overflow-x: hidden;}
+ul{list-style-type: none; margin:0; padding:0};
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.zong_box{
+	width: 100%;
+	height: 100%;
+}
+/*logo 顶部绝对定位*/
+.top_logo{
+	background-color: #1b1b1b;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 55px;
+	position: fixed;
+	top: 0px;left: 0px;
+	z-index: 22;
+	box-shadow: 1px 1px 15px #3e3d43;
+}
+.top_logo a{
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+.top_logo img{
+	margin:0px 5px;
+}
+.logo_left{
+	font-weight: bold;
+}
+.logo_right{
+	font-size: 0.7em;
+}
+
+/*中间内容*/
+.wap_main{
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin-top: 55px;
+	
+}
+/*轮播图*/
+.wap_carousel{
+
+}
+/*搜索框*/
+.wap_search_box{
+	margin-top:10px;
+	
+}
+.wap_search_box_select{
+	position: fixed;
+	bottom: 55px;
+}
+.wap_search_box_select input{
+	box-shadow: 1px 1px 15px #3e3d43;
+}
+.wap_search_box_select span{
+	box-shadow: 1px 1px 15px #3e3d43;
+}
+/*本周推荐标题*/
+.week_re_title{
+	margin-bottom: 5px;
+}
+/*本周推荐内容*/
+.wap_week_Re_main_box{
+	width: 100%;
+	height: 100%;	
+	float:left;
+	box-sizing: border-box;
+	border-left: 12px solid #f9f9f9;
+	padding: 10px 15px;
+	background-color: white;
+	box-shadow: 1px 1px 15px gainsboro ;
+}
+/*左边的文字*/
+.wap_week_Re_main_box .left{
+	width: 75%;
+	float: left;
+}
+.wap_week_Re_main_box a{
+	text-decoration: none;
+	width: 100%;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*第一个a标签*/
+.wap_week_Re_main_box a:first-of-type{
+	color: #1B1B1B;
+	font-size: 1.3em;
+}
+/*作者小字*/
+.wap_week_Re_main_box a:last-of-type{
+	font-size: 0.8em;
+	margin-top: 10px !important;
+}
+.wap_week_Re_main_box a .right{
+	float: right;
+	margin-right: 20px;
+}
+
+
+.wap_week_Re_main_box a{
+	color: gray;
+	font-size: 1.2em;
+	margin-top: 5px;
+	/*float: left;*/
+}
+/*图片设置 通用*/
+.wap_week_Re_main_box img{
+	width:20%;
+	float: right;
+}
+
+/*标题2 最新下载*/
+.week_re_title2{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	float: left;
+}
+/*全部书籍*/
+.wap_allbooks a {
+	white-space: normal !important;
+}
+.wap_allbooks .left{
+	width: 65%;
+}
+.wap_allbooks img{
+	width: 30% !important;
+}
+.wap_allbooks span{
+	margin-left: 5px;
+	color: gray;
+	font-size: 0.8em;
+}
+
+
+/*占位*/
+.wap_bottom_null{
+	height: 100px;
+	width: 100%;
+	float: left;
+}
+
+/*底部，绝对定位*/
+.bottom_box{
+	height: 45px;
+	width: 100%;
+	background-color:white;
+	box-shadow: 1px 1px 5px #3e3d43;
+	position: fixed;
+	bottom: 0px;left:0px;
+	z-index: 33;
+}
+.bottom_box div,.information_bo_btn{
+	width: 25%;
+	height: 45px;
+	box-sizing: border-box;
+	/*border: 1px solid black;*/
+	padding: 2px;
+	float:left;
+	line-height: 40px;
+	text-align: center;
+}
+.bottom_box img{
+	width:25%;
+	/*vertical-align: middle;*/
+	/*display: block;*/	
+}

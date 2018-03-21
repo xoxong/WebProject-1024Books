@@ -1,0 +1,305 @@
+<!--
+	作者：小熊
+	时间：2017-03-14
+	描述：详情页面
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>详情页面</title>
+		<meta name="keywords" content="1024免费电子书网,kindle电子书,txt电子书籍下载网" />
+		<meta name="description" content="1024免费小说网,免费提供弄txt,mobi,kindle小说资源"/>
+		<link rel="stylesheet" href="../css/headXM.css" />
+		<link rel="stylesheet" href="../css/bottomXM.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/IE_bottomXM.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/detaills.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/IE_detaills.css"/>-->
+		<!--jq导入-->
+		<script src="../js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/headXM.js" ></script>
+	</head>
+	<body>
+		<!--窗口固定导航-->
+	<div class="fixed-nav-box detaills-nav" id="fixed_nav">
+		<div class="fixed-nav">
+			<ul>
+				<li class="fixed-nav-li fixed-nav-title ">1024小书柜
+					<ul>
+						<a href="../indexXM.html"><li>首页</li></a>
+						<a href="../allBooksXM.html"><li>全部书籍</li></a>
+						<a href="../informationXM.html"><li>资讯1024</li></a>
+					</ul>
+				</li>
+				<a href="###"><li class="fixed-nav-li">小说</li></a>
+				<a href="###"><li class="fixed-nav-li">玄幻</li></a>
+				<a href="###"><li class="fixed-nav-li">励志</li></a>
+				<a href="###"><li class="fixed-nav-li">体育</li></a>
+				<!--其他-->
+				<li class="fixed-nav-li fixed-nav-button">其他&nbsp;<img src="../img/book-menu.png" width="10px"width="5px" />
+					<ul>
+						<a href=""><li class="fixed-nav-li3">科学</li></a>
+						<a href=""><li class="fixed-nav-li3">生活</li></a>
+						<a href=""><li class="fixed-nav-li3">英文</li></a>
+						<a href=""><li class="fixed-nav-li3">经典</li></a>
+
+						<a href=""><li class="fixed-nav-li3">科学</li></a>
+						<a href=""><li class="fixed-nav-li3">生活</li></a>
+						<a href=""><li class="fixed-nav-li3">英文</li></a>
+						<a href=""><li class="fixed-nav-li3">经典</li></a>
+
+						<a href=""><li class="fixed-nav-li3">科学</li></a>
+						<a href=""><li class="fixed-nav-li3">生活</li></a>
+						<a href=""><li class="fixed-nav-li3">英文</li></a>
+						<a href=""><li class="fixed-nav-li3">经典</li></a>
+
+						<a href=""><li class="fixed-nav-li3">科学</li></a>
+						<a href=""><li class="fixed-nav-li3">生活</li></a>
+						<a href=""><li class="fixed-nav-li3">英文</li></a>
+
+						<a href=""><li class="fixed-nav-li3">科学</li></a>
+						<a href=""><li class="fixed-nav-li3">生活</li></a>
+						<a href=""><li class="fixed-nav-li3">英文</li></a>
+
+					</ul>
+				</li>
+			</ul>
+			<!--搜索框 调用版权导航-->
+					<div class="copyright-nav fixed-nav-search">
+						<input class="copyright-input fixed-nav-input" name="copyright-input" type="tel" placeholder="试试搜索喜欢的书籍吧" />
+						<select class="copyright-select" name="search-select">
+							<option selected="selected" value="1">文章</option>
+							<option value="2">作者</option>
+							<option value="3">书名</option>
+							<option value="4">简介</option>
+							<option value="5">国家</option>
+
+						</select>
+						<a class="copyright-a fixed-nav-search-a" href="#">搜索</a>
+						<!--搜索内容显示方框-->
+						<div class="search-input-main2 search-input-ul">
+							<ul>
+								<li class="title">书名</li>
+								<li class="li1">《边城的的故事》--黄文仔</li>
+								<li class="li1">《海泽娜》--沙克斯</li>
+								<li class="li1">《洛泽或》--斯科拉</li>
+
+								<li class="title">作者</li>
+								<li class="li1">的奈尔--《释放的温情》</li>
+								<li class="li1">加升温</li>
+								<li class="li1">黄文涛</li>
+
+								<li class="title">推荐</li>
+								<li class="li1">《卡诺尔》--释放的文学</li>
+							</ul>
+						</div>
+					</div>
+		</div>
+	</div>
+	<!--跳到顶部  悬浮-->
+	<!--跳到顶部  悬浮-->
+	<!--跳到顶部  悬浮-->
+	<div class="upward" id="upward">
+		<ul>
+			<li><img src="../img/qq_1.png" alt="顶部" />关注QQ</li>
+			<li class="upward-li2"><img src="../img/weibo_2.png" alt="顶部" />关注微信</li>
+			<li class="upward-li3" onclick="upward()"><img src="../img/up_1.png" alt="顶部" />返回顶部</li>
+		</ul>
+	</div>
+	<!--跳到顶部  悬浮 end-->
+	<!--跳到顶部  悬浮 end-->
+		<!--头部调用end-->
+
+		<!--内容部分-------------------------------------------------->
+		<!--内容部分-------------------------------------------------->
+		<!--内容部分-------------------------------------------------->
+		<!--占位置-->
+		<div class="null1"></div>
+		<div class="detaills-main">
+			<!--书籍名称等详情 头部-->
+			<div class="book-top">
+				<img src="../img/book-img/book1.png" alt="名字" width="180px"height="240px" />
+				<!--左边详情-->
+				<div class="book-left">
+					<ul>
+						<li class="li1">巫医觉醒 &nbsp;<span>一代江湖&nbsp;著作（版权归原作者所有）</span></li>
+						<li class="li3">简介:&nbsp;描述上古时代的信心文化小说，相对查un三天 的文学小说的区别是缺乏生动形象的局限说明</li>
+						<li class="li2">标签:&nbsp;<span>国内</span><span>励志小说</span><span>文学</span></li>
+						<li class="li4">出版时间：2016-5-5&nbsp;1522万</li>
+						<li class="li5">书籍下载</li>
+						<li class="li6">
+							<a class="txt" href="">txt</a>
+							<a class="mobi" href="">mobi</a>
+						</li>
+					</ul>
+				</div>
+				<!--右边评分-->
+				<div class="book-right">
+					<!--占位-->
+					<div class="null"></div>
+					<ul>
+						<li class="li1">找作者</li>
+						<li class="li1">找相似</li>
+						<li class="li2">7.7</li>
+						<li class="li3">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</li>
+					</ul>
+
+				</div>
+			</div><!--书籍名称等详情 头部  END-->
+			<!--作品信息 获得 作者相关-->
+			<div class="book-details">
+				<ul>
+					<!--li11 第一个特殊没有上隔间-->
+
+					<li class="li1 li11">荣誉动态<span>(Honor dynamics)</span></li>
+
+					<li class="li2">1952-4925获得了全球的领奖平高但盎然这不是你的角儿的但是你的 asd按时的asd按时<br/>1952-4925获得了全球的领奖平高但盎然这不是你的角儿的但是你的 asd按时的asd按时<br />1952-4925获得了全球的领奖平高但盎然这不是你的角儿的但是你的 asd按时的asd按时<br />1952-4925获得了全球的领奖平高但盎然这不是你的角儿的但是你的 asd按时的asd按时<br />1952-4925获得了全球的领奖平高但盎然这不是你的角儿的但是你的 asd按时的asd按时<br />1952-4925获得了全球的领奖平高但盎然这不是你的角儿的但是你的 asd按时的asd按时<br /></li>
+
+					<li class="li1">作品介绍<span>(Works introduction)</span></li>
+
+					<li class="li2">在川湘交界的茶峒附近，小溪白塔旁边，住着主人公翠翠和她爷爷老船夫。茶峒城里有个船总叫顺顺，他有两个儿子，老大叫天保，老二叫傩送。 端午节翠翠去看龙舟赛，偶然相遇相貌英俊的青年水手傩（nuó）送，傩送在翠翠的心里留下了深刻的印象。同时，傩送的兄长天保也喜欢上了翠翠，并提前托媒人提了亲。天保告诉傩送一年前他就爱上了翠翠，而傩送告诉天保他两年前就爱上了翠翠，天保听了后也吃了一惊。然而此时，当地的团总以新磨坊为陪嫁，想把女儿许配给傩送。而傩送宁肯继承一条破船也要与翠翠成婚。 兄弟俩没有按照当地风俗以决斗论胜负，而是采用公平而浪漫的唱山歌的方式表达感情，让翠翠自己从中选择。傩送是唱歌好手，天保自知唱不过弟弟，心灰意冷，断然驾船远行做生意。 碧溪边只听过一夜傩送的歌声，后来，歌却再没有响起来。老船夫忍不住去问，本以为是老大唱的，却得知：唱歌人是傩送，老大讲出实情后便去做生意。几天后老船夫听说老大坐水船出了事，淹死了…… 码头的船总顺顺因为儿子天保的死对老船夫变得冷淡。船总顺顺不愿意翠翠再做傩送的媳妇。老船夫只好郁闷地回到家，翠翠问他，他也没说起什么。夜里下了大雨，夹杂着吓人的雷声。第二天翠翠起来发现船已被冲走，屋后的白塔也冲塌了，翠翠去找爷爷却发现老人已在雷声将息时死去了…… 老军人杨马兵热心地前来陪伴翠翠，也以渡船为生，等待着傩送的归来。[1]</li>
+
+					<li class="li1">作者详情<span>(Author details)</span></li>
+
+					<li class="li2">唐家三少，本名张威。1981年1月10日生于北京，中国内地网络小说作家，炫世唐门文化投资有限公司董事长，毕业于河北大学政法学院。 2004年2月，在读写网开始创作处女座《光之子》，后转战幻剑书盟；[1] 5月，成为起点中文网签约作家之一；[2] 2008年12月，开始创作《斗罗大陆》。2009年10月，受邀出席法兰克福书展。[3] 2011年11月当选为中国作家协会全国委员会委员。[4] 2012年11月，问鼎第七届中国网络作家富豪榜榜首[5] 。2013年12月5日，问鼎第八届中国网络作家富豪榜榜首；[6] 同月25日，开始担任上海视觉艺术学院网络文学专业教授。[7] 同月30日，与盛大文学成立工作室“唐 Studio”。[8] 2014年5月，入选2014福布斯中国名人榜。[9] 10月，成立独立公司——炫世唐门文化投资有限公司。12月18日，三度问鼎第九届中国网络作家富豪榜榜首。[10] 2015年3月，开始创作《斗罗大陆外传神界传说》。5月，入选2015福布斯中国名人榜。[11] 2015年2月，其透露《斗罗大陆》将由好莱坞拍摄成四部电影。[12] 2016年3月，四度蝉联中国网络作家富豪榜冠军。</li>
+
+
+					<li class="li1">作者作品<span>(Author works)</span></li>
+
+					<!--动图-->
+					<li class="li3">
+						<a href=""><img src="../img/book-img/book1.png" alt="作品名字"/></a>
+						<a href=""><img src="../img/book-img/book1.png" alt="作品名字"/></a>
+						<a href=""><img src="../img/book-img/book1.png" alt="作品名字"/></a>
+						<a href=""><img src="../img/book-img/book1.png" alt="作品名字"/></a>
+						<a href=""><img src="../img/book-img/book1.png" alt="作品名字"/></a>
+						<a href=""><img src="../img/book-img/book1.png" alt="作品名字"/></a>
+						<a href=""><img src="../img/book-img/book1.png" alt="作品名字"/></a>
+					</li>
+
+					<!--下载-->
+					<li class="li4"></li>
+					<li class="li5">注意:&nbsp;本站所有文章来自网络，如侵权请联系我们删除xxxxxxx@yeah.net</li>
+					<li class="li5">本站链接:&nbsp;www.1024books.com</li>
+				</ul>
+			</div>
+			<!--作品信息 获得 作者相关END-->
+		</div>
+		<!--内容部分-------------------------------------------------->
+		<!--内容部分-------------------------------------------------->
+		<!--内容部分-------------------------------------------------->
+
+		<!--底部调用-->
+		<!--尾部版权-->
+		<!--外背景-->
+		<div class="bottomXM-box-w">
+			<!--版权部分外框-->
+			<div class="copyright-box">
+				<!--版权部分内-->
+				<div class="copyright-box-n">
+					<!--左边-->
+					<div class="copyright-1 copyright-left">
+						<!--占位-->
+						<div class="copyright-null1"></div>
+						<!--搜索框-->
+						<div class="copyright-nav ">
+							<input class="copyright-input bottom-nav-input" name="copyright-input" type="tel" placeholder="试试搜索喜欢的书籍吧" />
+							<select class="copyright-select" name="search-select">
+								<option selected="selected" value="1">文章</option>
+								<option value="2">作者</option>
+								<option value="3">书名</option>
+								<option value="4">简介</option>
+								<option value="5">国家</option>
+							</select>
+							<a class="copyright-a" href="#">搜索</a>
+							<!--搜索内容显示方框-->
+							<div class="search-input-main3 search-input-ul search-input-ul3">
+								<ul>
+									<li class="title">书名</li>
+									<li class="li1">《边城的的故事》--黄文仔</li>
+									<li class="li1">《海泽娜》--沙克斯</li>
+									<li class="li1">《洛泽或》--斯科拉</li>
+
+									<li class="title">作者</li>
+									<li class="li1">的奈尔--《释放的温情》</li>
+									<li class="li1">加升温</li>
+									<li class="li1">黄文涛</li>
+
+									<li class="title">推荐</li>
+									<li class="li1">《卡诺尔》--释放的文学</li>
+								</ul>
+							</div>
+						</div>
+						<!--占位-->
+						<div class="copyright-null2"></div>
+						<!--关注1024-->
+						<div class=" copyright-follow">
+							关注我们：<a><img src="../img/wechat1.png" width="32px" height="32px" /><img class="img-2" src="../img/QR Code.png" alt="lallla" width="100px" height="100px" /></a> 1024小书柜<span class="copyright-follow-span">(点击查看二维码)</span>
+							<a><img src="../img/sina1.png" width="32px" height="32px" /><img class="img-2" src="../img/QR Code.png" alt="lallla" width="100px" height="100px" /></a> 1024小书柜<span class="copyright-follow-span">(点击查看二维码)</span>
+						</div>
+						<!--版权声明-->
+						<div class="copyright-state">
+							Copyright © 2013-2014 Cenday All rights reserved.  粤ICP备13047866号
+						</div>
+						<!--关于我们-->
+						<div class="copyright-concern">
+							<ul>
+								<a><li class="copyright-concern_li">关于我们 </li></a>
+								<a><li>免责声明 </li></a>
+								<a><li>网站地图  </li></a>
+								<a><li>资讯新闻</li></a>
+								<a><li>留言反馈</li></a>
+							</ul>
+						</div>
+					</div>
+					<!--右边-->
+					<div class="copyright-1 copyright-right">
+						<!--调用占位-->
+						<div class="copyright-null1"></div>
+						<!--联系我们-->
+						<div class="copyright-contact-box">
+							<!--378*130-->
+							<div class="copyright-contact">
+								<a>联系我们</a>
+								<a>电子邮箱：931623824@qq.com,1279724190@qq.com</a>
+								<a>在线咨询：931623824 / 1279724190</a>
+								<a>联系地址：上海浦东新区东葛路2525号</a>
+							</div>
+							<!--二维码-->
+							<div class="copyright-wechat">
+								<img src="../img/QR Code.png" width="130px" height="130px" />
+								<div class="copyright-wechat-font">
+									<a>官方微信</a>
+									<a>扫一扫</a>
+									<a>更多精彩</a>
+									<a>资讯</a>
+								</div>
+							</div>
+						</div>
+
+						<!--本站声明-->
+						<div class="copyright-site-statement"><a>本站声明：本站提供的图片仅供学习和交流使用，版权归原作者所有，请勿用于任何商业用途</a></div>
+					</div>
+				</div>
+			</div>
+			<!--友情链接-->
+			<div class="friendship-link-box">
+				<ul>
+					<li class="friendship-link-li">友情链接：</li>
+					<a class="#"><li>360全方位</li></a>
+					<a class="#"><li>1024家居网</li></a>
+					<a class="#"><li>书记在线阅读</li></a>
+					<a class="#"><li>1024精彩资讯</li></a>
+					<a class="#"><li>最新精品</li></a>
+				</ul>
+			</div>
+		</div><!--外背景-->
+	</body>
+</html>
+

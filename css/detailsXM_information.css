@@ -1,0 +1,113 @@
+body{
+	background-color: #F5F5F5;
+	background-image: none;
+}
+/*占位空格*/
+.information_main_null{
+	width: 1220px;
+	height:100px;
+	margin: 0 auto;
+}
+.information_main{
+	width: 1220px;
+	height: 2200px;
+	margin: 0 auto;
+}
+/*居中内容边框*/
+.information_main_box{
+	margin: 0 auto;
+	width: 800px;
+	height: auto;
+}
+/*标题 内容 zong*/
+.information_main .title_box,.main_box,.share_box{
+	width: 800px;
+	height:auto;
+	float: left;
+	box-shadow: 0px 0px 15px #C0C0C0;
+	background-color: white;
+	margin-bottom: 29px;
+}
+/*标题*/
+.information_main .title_box{
+	height: 220px;
+}
+/*边框修饰线*/
+.title_box_line{
+	width: 780px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+	border: 1px solid gainsboro;
+}
+.information_main .title_box .a1,.a2,.a3{
+	width: 100%;
+	float: left;
+	
+}
+.information_main .title_box .a1{
+	height: 70px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 1.7em;
+	font-weight: bold;
+}
+.information_main .title_box .a2{
+	height: 70px;
+	text-align: center;
+	line-height: 73px;
+	font-size: 1.3em;
+}
+.information_main .title_box .a3{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 1em;
+	color:#737373;
+}
+
+/*内容*/
+.information_main  .main_box{
+	width: 760px;
+	height: auto;
+	padding: 20px;
+}
+.information_main  .main_box a{
+	width: 760px;
+	height: auto;
+	font-size: 1.3em;
+	line-height: 30px;
+}
+.information_main  .main_box a img{
+	width: 760px;
+	height: auto;
+	margin: 10px 0;
+}
+/*尾部标签*/
+.information_main .main_box .label_box{
+	width: 100%;
+	height: 30px;
+	margin-top: 25px;
+}
+/*标签标题*/
+.information_main .main_box .label_box .title{
+	width: auto;
+	height:auto;
+	color: white;
+	font-size: 1.1em;
+	background-color: #3E3D43;
+	padding: 2px 15px;
+}
+.information_main .main_box .label_box .a1{
+	margin: 0 2px;
+	padding: 2px 5px;
+	color: #FF2832;
+	font-size: 1em;
+	border: 1px solid #FF2832;
+}
+/*一键分享*/
+.share_box{
+	height: 70px;
+	text-align: center;
+	padding-top: 20px;
+}
